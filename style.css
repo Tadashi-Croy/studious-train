@@ -1,0 +1,63 @@
+*, *::before, *::after{
+    box-sizing: border-box;
+    margin: 0;
+    padding: 0;
+}
+body{
+    text-align: center;
+    background: rgb(255, 223, 165);
+    display: flex;
+    justify-content: center;
+    flex-direction: column;
+    justify-items: flex-start;
+}
+main{
+    display: flex;
+    justify-content: space-around;
+    padding: 1rem;
+    background: rgb(255, 231, 186);
+    width: 95%;
+    height: 100vh;
+    margin: auto;
+    
+}
+
+li{
+    list-style: none;
+}
+
+.doList{
+    display: flex;
+    flex-direction: row-reverse;
+    justify-content: space-between;
+    border: 1px solid black;
+    margin: 5px;
+    border-radius: 3px;
+    background-color: rgb(255, 255, 199);
+    padding: 0 .5rem;
+    cursor: crosshair;
+}
+
+
+.doneBtn{
+    transform: scale(.9);
+
+
+}
+#addedItems{
+    user-select: none;
+}
+
+
+.remove-btn{
+    border: none;
+    background-color: white;
+    transform: scale(.8);
+    padding: 3px;
+    border-radius: 4px;
+    
+}
+#removeAll:active{
+    transform: scale(.85);
+    border: 1px solid blue;
+}
